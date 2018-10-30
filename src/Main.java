@@ -1,4 +1,5 @@
 import model.Etudiant;
+import sun.reflect.generics.tree.LongSignature;
 
 import java.util.*;
 
@@ -60,6 +61,21 @@ public class Main {
         System.out.println("before sorting: " + listOfWeightLossFood);
         listOfWeightLossFood.sort(Comparator.reverseOrder());
         System.out.println("after sorting: " + listOfWeightLossFood);
+
+
+        System.out.println("-------------------");
+        String fadi = "Fadi";
+        String matilde= "Matilde";
+        String manon= "Manon";
+
+        List nameList = new LinkedList();
+        nameList.add("my name is "+fadi+ " that's "+ fadi.length() +" lettres");
+        nameList.add("my name is "+matilde+ " that's "+ matilde.length() +" lettres");
+        nameList.add("my name is "+manon+ " that's "+ manon.length() +" lettres");
+
+        for(int i=0; i< nameList.size(); i++){
+            System.out.println(nameList.get(i));
+        }
 
 
     }
